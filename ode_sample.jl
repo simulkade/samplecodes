@@ -9,7 +9,7 @@ function rate(t, c, dc)
     dc[3] = r
 end
 
-c0 = [1.0; 0.9; 0.0]
+c0 = [1.0; 0.9; 0.1]
 tspan = (0.0,10)
 
 prob = ODEProblem(rate,c0,tspan)
