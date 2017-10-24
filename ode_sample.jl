@@ -2,7 +2,7 @@ using DifferentialEquations, Plots
 
 function rate(t, c, dc)
     kf = 1.0
-    kb = 1.0
+    kb = 0.5
     r = kf*c[1]*c[2]-kb*c[3]
     dc[1] = -r
     dc[2] = -r
